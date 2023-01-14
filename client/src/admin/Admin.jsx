@@ -27,7 +27,7 @@ const Admin = () => {
             setMembers(res.data.data)
         })
         .catch(err=>console.log(err))
-    },[])
+    },[isAdmin, navigate, token])
 
     const handleChange = (e) => {
         let {name, value} = e.target

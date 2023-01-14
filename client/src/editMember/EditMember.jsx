@@ -25,7 +25,7 @@ const EditMember = () => {
             setUserDetails(res.data.data)
         })
         .catch(err => {alert(err.response.data.message)})
-    },[userId,token])    
+    },[userId, token, isAdmin, navigate])    
 
     const handleChange = (e) => {
         setIsChnaged(true)
