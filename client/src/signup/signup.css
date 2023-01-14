@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color:#0083c907;
+    background-color:#0A2647;
 }
 
 .signup-form{
@@ -19,40 +19,6 @@
     border-radius: 10px;
     padding: 3rem;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-}
-
-.signup-form-input{
-    position: relative;
-}
-
-.signup-form-input>input{
-    width: 20rem;
-    height: 3rem;
-    border: 1px solid black;
-    padding: 1rem;
-    border-radius: 5px;
-    outline: none;
-}
-.signup-form-input>label{
-    position: absolute;
-    left: 0;
-    padding: 1rem;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
-.signup-form-input>input:valid ~ label,
-.signup-form-input>input:focus ~ label{
-    transform: translateX(1rem) translateY(-.5rem);
-    letter-spacing: .2rem;
-    background-color: white;
-    padding: 0 1rem ;
-    color: #0081C9;
-    font-size: .8rem;
-}
-.signup-form-input>input:valid,
-.signup-form-input>input:focus{
-    border-color: #0081C9;
 }
 
 .signup-form-check{

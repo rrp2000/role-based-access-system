@@ -31,13 +31,13 @@ const Login = () => {
 
     }
   return (
-    <div className='signup-container'>
-        <div className='signup-form'>
+    <div className='login-container'>
+        <div className='login-form'>
             <h1>Login</h1>
-            <div className = "signup-form-input"> 
+            <div className = "form-input"> 
             <input onChange={handleChange} required type='text' name='email' value={loginDetails.email}/><label>E-mail</label>
             </div>
-            <div className = "signup-form-input"> 
+            <div className = "form-input"> 
             <input onChange={handleChange} required type='text' name='password' value={loginDetails.password}/><label>Password</label>
             </div>
             

@@ -1,3 +1,4 @@
+/* eslint-disable no-eval */
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./navbar.css";
@@ -14,8 +15,8 @@ const Navbar = () => {
         Admin<span>.io</span>
       </div>
       <div className="navbar-links">
-        {eval(isAdmin) && <Link to = {"/"} >Billing</Link>}
-        {eval(isAdmin) && <Link to = {"/admin"}>Admin Features</Link>}
+        {(isAdmin === "true") && <Link to = {"/billing"} >Billing</Link>}
+        {(isAdmin === "true") && <Link to = {"/admin"}>Admin Features</Link>}
         <Link to = {"/login"} onClick = {()=>localStorage.clear()}>Logout</Link>
       </div>
     </nav>

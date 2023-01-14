@@ -41,16 +41,16 @@ const Signup = () => {
         <div className='signup-form'>
             <h1>Sign Up</h1>
 
-            <div className = "signup-form-input"> 
+            <div className = "form-input"> 
             <input onChange={handleChange} required type='text' name='fName' value={signupDetails.fName}/><label>First Name</label>
             </div>
-            <div className = "signup-form-input"> 
+            <div className = "form-input"> 
             <input onChange={handleChange} required type='text' name='lName' value={signupDetails.lName}/><label>Last Name</label>
             </div>
-            <div className = "signup-form-input"> 
+            <div className = "form-input"> 
             <input onChange={handleChange} required type='text' name='email' value={signupDetails.email}/><label>E-mail</label>
             </div>
-            <div className = "signup-form-input"> 
+            <div className = "form-input"> 
             <input onChange={handleChange} required type='text' name='password' value={signupDetails.password}/><label>Password</label>
             </div>
             <div className = "signup-form-check"> 
